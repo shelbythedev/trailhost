@@ -1,0 +1,13 @@
+{
+  "name": "trailhost",
+  "version": "0.1.0",
+  "description": "A community-supported database of off-road trails around the US.",
+  "author": "Shelby Solomon <shelby@shelbysolomon.net> (http://shelbysolomon.net/)",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.15.3",
+    "mongoose": "~4.11.0",
+    "body-parser": "~1.17.2",
+    "method-override": "~2.3.9"
+  }
+}
