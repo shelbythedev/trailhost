@@ -23,4 +23,4 @@ TrailHost is a community-supported store of off-road trail data.
 
 ## Getting Started
 ### Establish TrailHost account
-Before you access TrailHost, you must request an account from us by emailing us at [shelby@shelbysolomon.net]('mailto:shelby@shelbysolomon.net').
+Before you access TrailHost, you must request an account from us by emailing us at [shelby@shelbysolomon.net](mailto:shelby@shelbysolomon.net).
