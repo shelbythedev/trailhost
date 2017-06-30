@@ -3,7 +3,7 @@
 TrailHost is a community-supported store of off-road trail data.
 
 ## Sections
-[Current Status](#Current-Status)
+[Current Status](#current-status)
 
 ## Current Status
 ### API URLs
