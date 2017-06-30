@@ -8,3 +8,11 @@ mongoose.connect(dbConnection, (err) => {
     console.log('Connected to DB')
   }
 })
+
+mongoose.set('debug', true)
+
+mongoose.connection.on('error', (err) => {
+  console.log('MongoDB error: %s', err)
+})
+
+module.exports = mongoose
