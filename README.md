@@ -6,6 +6,8 @@ TrailHost is a community-supported store of off-road trail data.
 [Current Status](#current-status)
 
 ## Current Status
+**Currently in development, thus no stable or test version yet.**
+
 ### API URLs
 
 | Type | URL |
@@ -14,7 +16,6 @@ TrailHost is a community-supported store of off-road trail data.
 | Test | TBD |
 
 ### Versions
-**Currently in development, thus no stable version yet.**
 
 | Version | URL |
 | ----- | ------ |
@@ -22,3 +23,4 @@ TrailHost is a community-supported store of off-road trail data.
 
 ## Getting Started
 ### Establish TrailHost account
+Before you access TrailHost, you must request an account from us by emailing us at [shelby@shelbysolomon.net]('mailto:shelby@shelbysolomon.net').
