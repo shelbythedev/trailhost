@@ -4,6 +4,9 @@ let path = require('path')
 let logger = require('morgan')
 let bodyParser = require('body-parser')
 
+// Private API files
+let privateClient = require('./routes/api/private_api/client')
+
 // Initialize Express
 let app = express()
 
@@ -16,6 +19,9 @@ app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
+
+// Private API routes
+app.use('/private_api/client', privateClient)
 
 // Index handler
 app.use((req, res, next) => {
