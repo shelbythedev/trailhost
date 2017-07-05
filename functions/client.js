@@ -7,6 +7,7 @@ let mongoose = require('mongoose'),
 // Models
 let Clients = mongoose.model('Client')
 
+// generate token for client
 let createToken = (uid, secret, callback) => {
   let error, token = null
 
@@ -27,8 +28,19 @@ let createToken = (uid, secret, callback) => {
   })
 }
 
+// get client by token
+let findByToken = (token, callback) => {
+  let error = null
+
+  Clients.findOne({ token: token }).exec((err, client) => {
+    if (err) error = err
+    return callback(error, client)
+  })
+}
+
 let Client = {
-  createToken: createToken
+  createToken: createToken,
+  findByToken: findByToken
 }
 
 module.exports = Client

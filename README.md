@@ -16,6 +16,8 @@ TrailHost is a community-supported store of off-road trail data.
 
     * [Token](#token)
 
+    * [Get Client](#get-client)
+
 ## Technical Information
 ### API URLs
 
@@ -37,7 +39,7 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
 ### Client
 #### Token
 
-  Generate token based on Client's UID and SECRET. Tokens expire every 24 hours and must be renewed.
+  Returns `Token` object based on Client's UID and SECRET. Tokens expire every 24 hours and must be renewed.
 
   * URL
 
@@ -54,15 +56,39 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
 
     *None*
 
-  * Response Statuses
-
-    `200 OK`: returns `Token` object
-
-    `401 UNAUTHORIZED`: returns error
-
   * Sample Response
   ```javascript
     {
       token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoiMjAxNy0wNy0wNVQxNzowNzo1MS4yOTRaIn0.dDIeUGZ52xVDrUXa5itPzTgmPfQxmfbWs-E8iXF0h1A"
+    }
+  ```
+
+#### Get Client
+
+  Returns current `Client` object in session.
+
+  * URL
+
+    `GET /client/`
+
+  * Request Headers
+
+    ```
+      token : [String],
+    ```
+
+  * Request Body
+
+    *None*
+
+  * Sample Response
+  ```javascript
+    {
+      "_id": "595d02c93cd0130428d59d84",
+      "name": "My Client",
+      "uid": "b3eed842-f73e-45ec-84a6-ecb20eb4c6f2",
+      "secret": "e96c1c40-6194-11e7-aa2f-47fc3614a99d",
+      "__v": 0,
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoiMjAxNy0wNy0wNVQxOToxNjo1NC41MzBaIn0.AR3AvGp9oRAaxk107Rtxt4WnfsjYkfHnMcDJxQj_bwo"
     }
   ```

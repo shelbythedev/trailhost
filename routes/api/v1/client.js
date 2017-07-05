@@ -25,11 +25,19 @@ router.use((req, res, next) => {
   }
 })
 
-// request new token
+// TOKEN
 router.post('/token', (req, res, next) => {
   Client.createToken(req.get('uid'), req.get('secret'), (err, token) => {
     if (err) return next(new Error(err))
     res.status(200).json({token: token})
+  })
+})
+
+// GET CLIENT
+router.get('/', (req, res, next) => {
+  Client.findByToken(req.get('token'), (err, client) => {
+    if (err) return next(new Error(err))
+    res.status(200).json(client)
   })
 })
 

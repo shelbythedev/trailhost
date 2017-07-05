@@ -3,6 +3,7 @@ let express = require('express')
 let path = require('path')
 let logger = require('morgan')
 let bodyParser = require('body-parser')
+let session = require('express-session')
 
 // Public API files
 let client = require('./routes/api/v1/client')
@@ -22,6 +23,9 @@ app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
+app.use(session({
+  secret: 'hydrocoptic marzlevanes'
+}))
 
 // Public API routes
 app.use('/api/v1/client', client)
