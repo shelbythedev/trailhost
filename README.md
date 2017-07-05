@@ -6,13 +6,15 @@ TrailHost is a community-supported store of off-road trail data.
 
 ## Sections
 
-[Technical Information](#technical-information)
+* [Technical Information](#technical-information)
 
-[Become a Client](#become-a-client)
+* [Documentation](#documentation)
 
-[Client Model](#client)
+  * [Become a Client](#become-a-client)
 
-  [Token](#token)
+  * [Client](#client)
+
+    * [Token](#token)
 
 ## Technical Information
 ### API URLs
