@@ -10,7 +10,7 @@ TrailHost is a community-supported store of off-road trail data.
 
 [Become a Client](#become-a-client)
 
-[Create Token](#create-token)
+[Create Token](#token)
 
 ## Technical Information
 ### API URLs
@@ -31,7 +31,7 @@ TrailHost is a community-supported store of off-road trail data.
 To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@shelbysolomon.net) for access. Upon account creation, you will receive authentication UID and SECRET keys for token generation. Your token expires every 24 hours and must be renewed. Always store these outside your application.
 
 ### Client
-* **Create Token**
+#### Token
 
   Generate token based on Client's UID and SECRET. Tokens expire every 24 hours and must be renewed.
 
