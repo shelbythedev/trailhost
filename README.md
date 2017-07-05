@@ -20,9 +20,9 @@ TrailHost is a community-supported store of off-road trail data.
 
 ### Versions
 
-| Version | URL |
+| Version | URL | Changelog |
 | ----- | ------ |
-| v 1.0.0 | Pending... |
+| v 1.0.0 | TBD | Initial release pending |
 
 ## Documentation
 #### Become a Client
