@@ -38,9 +38,24 @@ let findByToken = (token, callback) => {
   })
 }
 
+// update client
+let updateClient = (token, clientData, callback) => {
+  let error = null
+
+  Clients.findOne({ token: token }).exec((err, client) => {
+    if (err) error = err
+    client.name = clientData.name
+    client.save(err => {
+      if (err) error = err
+    })
+    return callback(error, client)
+  })
+}
+
 let Client = {
   createToken: createToken,
-  findByToken: findByToken
+  findByToken: findByToken,
+  update: updateClient
 }
 
 module.exports = Client

@@ -41,4 +41,13 @@ router.get('/', (req, res, next) => {
   })
 })
 
+// UPDATE CLIENT
+// only "name" can be updated
+router.put('/', (req, res, next) => {
+  Client.update(req.get('token'), req.body, (err, client) => {
+    if (err) return next(new Error(err))
+    res.status(200).json(client)
+  })
+})
+
 module.exports = router
