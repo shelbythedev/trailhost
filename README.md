@@ -30,7 +30,12 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
 
 ### Client
 * **Create Token**
+
   Generate token based on Client's UID and SECRET. Tokens expire every 24 hours and must be renewed.
+
+  * URL
+
+    `POST /client/token`
 
   * Sample call
   ```javascript
