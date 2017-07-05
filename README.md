@@ -26,4 +26,12 @@ TrailHost is a community-supported store of off-road trail data.
 
 ## Documentation
 #### Become a Client
-To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@shelbysolomon.net) for access.
+To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@shelbysolomon.net) for access. Upon account creation, you will receive authentication UID and SECRET keys. Always store these outside your application.
+
+### Client
+`/token`
+To access TrailHost, you will need to submit a token in the headers of all requests. This token is generated based on your client UID and SECRET. Tokens expire every 24 hours and must be renewed.
+
+```json
+  
+```

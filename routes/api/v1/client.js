@@ -1,7 +1,8 @@
-let express = require('express')
-let router = express.Router()
-let Client = require('../../../function/client')
-let auth = require('../../../lib/authentication')
+// Dependencies
+let express = require('express'),
+    router = express.Router(),
+    Client = require('../../../functions/client'),
+    auth = require('../../../lib/authentication')
 
 // run client authentication before routing
 router.use((req, res, next) => {
@@ -22,6 +23,14 @@ router.use((req, res, next) => {
       next()
     })
   }
+})
+
+// request new token
+router.post('/token', (req, res, next) => {
+  Client.createToken(req.get('uid'), req.get('secret'), (err, token) => {
+    if (err) return next(new Error(err))
+    res.status(200).json({token: token})
+  })
 })
 
 module.exports = router
