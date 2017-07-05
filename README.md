@@ -34,14 +34,12 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
 
   * Sample call
   ```javascript
-    {
-      url: "client/token",
-      method: "POST",
-      headers: [
-        uid : [UID],
-        secret : [SECRET]
-      ]
-    }
+    url: "client/token",
+    method: "POST",
+    headers: [
+      uid : [UID],
+      secret : [SECRET]
+    ]
   ```
 
   * Sample Response
