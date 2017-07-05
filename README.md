@@ -32,12 +32,12 @@ TrailHost is a community-supported store of off-road trail data.
 | ----- | ------ | ------ |
 | v 1.0.0 | TBD | Initial release pending |
 
-## Documentation
-#### Become a Client
+# Documentation
+### Become a Client
 To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@shelbysolomon.net) for access. Upon account creation, you will receive authentication UID and SECRET keys for token generation. Your token expires every 24 hours and must be renewed. Always store these outside your application.
 
-### Client
-#### Token
+## Client
+### Token
 
   Returns `Token` object based on Client's UID and SECRET. Tokens expire every 24 hours and must be renewed.
 
@@ -63,7 +63,7 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
     }
   ```
 
-#### Get Client
+### Get Client
 
   Returns current `Client` object in session.
 
