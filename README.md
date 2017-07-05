@@ -99,7 +99,7 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
 
   Updates current `Client` object in session.
 
-  **Only `Client["name"] may be updated`**
+  **Only** `Client["name"]` **may be updated**
 
   * URL
 
