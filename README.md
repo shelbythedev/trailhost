@@ -45,8 +45,14 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
     ```
 
   * Request Body
-  
+
     *None*
+
+  * Response Statuses
+
+    `200 OK`: returns `Token` object
+
+    `401 UNAUTHORIZED`: returns error
 
   * Sample Response
   ```javascript
