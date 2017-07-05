@@ -37,15 +37,15 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
 
     `POST /client/token`
 
-  * Sample call
-  ```javascript
-    url: "client/token",
-    method: "POST",
-    headers: [
-      uid : [UID],
-      secret : [SECRET]
-    ]
-  ```
+  * Request Headers
+
+    ```
+      uid    : [String],
+      secret : [String]
+    ```
+
+  * Request Body
+    *None*
 
   * Sample Response
   ```javascript
