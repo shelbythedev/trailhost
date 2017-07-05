@@ -45,6 +45,7 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
     ```
 
   * Request Body
+  
     *None*
 
   * Sample Response
