@@ -120,13 +120,13 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
     ```
 
   * Sample Response
-  ```javascript
-    {
-      "_id": "595d02c93cd0130428d59d84",
-      "name": "Updated Client Name",
-      "uid": "b3eed842-f73e-45ec-84a6-ecb20eb4c6f2",
-      "secret": "e96c1c40-6194-11e7-aa2f-47fc3614a99d",
-      "__v": 0,
-      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoiMjAxNy0wNy0wNVQxOToxNjo1NC41MzBaIn0.AR3AvGp9oRAaxk107Rtxt4WnfsjYkfHnMcDJxQj_bwo"
-    }
-  ```
+    ```javascript
+      {
+        "_id": "595d02c93cd0130428d59d84",
+        "name": "Updated Client Name",
+        "uid": "b3eed842-f73e-45ec-84a6-ecb20eb4c6f2",
+        "secret": "e96c1c40-6194-11e7-aa2f-47fc3614a99d",
+        "__v": 0,
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjcmVhdGVkIjoiMjAxNy0wNy0wNVQxOToxNjo1NC41MzBaIn0.AR3AvGp9oRAaxk107Rtxt4WnfsjYkfHnMcDJxQj_bwo"
+      }
+    ```
