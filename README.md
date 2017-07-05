@@ -10,6 +10,8 @@ TrailHost is a community-supported store of off-road trail data.
 
 [Become a Client](#become-a-client)
 
+[Create Token](#create-token)
+
 ## Technical Information
 ### API URLs
 
