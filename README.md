@@ -1,9 +1,13 @@
 # TrailHost API
 
 TrailHost is a community-supported store of off-road trail data.
+
 **Currently in development, thus no stable or test version yet.**
 
+#### Sections
+
 [Technical Information](#technical-information)
+
 [Become a Client](#become-a-client)
 
 ## Technical Information
