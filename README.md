@@ -43,12 +43,12 @@ To have access to TrailHost, you must be a client. [Contact us](mailto:shelby@sh
 Clients are representative objects of applications which use/contribute to TrailHost. Any application who wishes to access our API must have a Client.
 
 ```
-  {
-    name: String,
-    uid: String,
-    secret: String,
-    token: String
-  }
+  Client = {
+              name: String,
+              uid: String,
+              secret: String,
+              token: String
+            }
 ```
 
 ### Token
@@ -150,10 +150,10 @@ Any end-user which contributes to TrailHost must have an User account.
 **Note:** TrailHost does NOT manage user account data, such as passwords or login information. We only store a User's alias and email, along with number of submissions and timestamp of when the User object was created.
 
 ```
-  {
-    alias: String,
-    email: String (email format),
-    submission_count: Integer,
-    created_at: ISO Timestamp
-  }
+  User = {
+            alias: String,
+            email: String (email format),
+            submission_count: Integer,
+            created_at: ISO Timestamp
+          }
 ```
