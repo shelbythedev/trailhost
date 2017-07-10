@@ -22,6 +22,8 @@ TrailHost is a community-supported store of off-road trail data.
 
   * [User](#user)
 
+    * [Get All Users](#get-all-users)
+
     * [Create User](#create-user)
 
 ## Technical Information
