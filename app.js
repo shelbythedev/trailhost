@@ -7,6 +7,7 @@ let session = require('express-session')
 
 // Public API files
 let client = require('./routes/api/v1/client')
+let user = require('./routes/api/v1/user')
 
 // Private API files
 let privateClient = require('./routes/api/private_api/client')
@@ -29,6 +30,7 @@ app.use(session({
 
 // Public API routes
 app.use('/api/v1/client', client)
+app.use('/api/v1/user', user)
 
 // Private API routes
 app.use('/private_api/client', privateClient)

@@ -20,6 +20,10 @@ TrailHost is a community-supported store of off-road trail data.
 
     * [Update Client](#update-client)
 
+  * [User](#user)
+
+    * [Create User](#create-user)
+
 ## Technical Information
 ### API URLs
 
@@ -147,13 +151,47 @@ Clients are representative objects of applications which use/contribute to Trail
 
 Any end-user which contributes to TrailHost must have an User account.
 
-**Note:** TrailHost does NOT manage user account data, such as passwords or login information. We only store a User's alias and email, along with number of submissions and timestamp of when the User object was created.
+**Note:** TrailHost does NOT manage user account data, such as passwords or login information. We only store a User's alias (should be relational to user account on Client's application), submission count, and timestamp of when the User object was created.
 
 ```
   User = {
             alias: String,
-            email: String (email format),
             submission_count: Integer,
             created_at: ISO Timestamp
           }
 ```
+
+### Create User
+
+  Creates new `User` object.
+
+  **Only accepts `User.alias`, which should be the user's screen name.**
+
+  * URL
+
+    `POST /user/`
+
+  * Request Headers
+
+    ```
+      token : [String],
+    ```
+
+  * Request Body
+
+    ```javascript
+      {
+        "alias": "my_user_name"
+      }
+    ```
+
+  * Sample Response
+  ```javascript
+    {
+      "alias": "my_user_name",
+      "client_id": "595d02c93cd0130428d59d84",
+      "_id": "5963b58048a2890629fd645e",
+      "created_at": "2017-07-10T15:33:49.004Z",
+      "submission_count": 0
+    }
+  ```
