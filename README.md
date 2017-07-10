@@ -30,13 +30,13 @@ TrailHost is a community-supported store of off-road trail data.
 | Type | URL |
 | ------ | ------ |
 | Production | TBD |
-| Test | https://trailhost.herokuapp.com/ |
+| Test | https://trailhost-test.herokuapp.com |
 
 ### Versions
 
 | Version | URL | Changelog |
 | ----- | ------ | ------ |
-| v 1.0.0 (test) | https://trailhost.herokuapp.com/ | Currently in development |
+| v 1.0.0 (test) | https://trailhost-test.herokuapp.com | Currently in development |
 
 # Documentation
 ### Become a Client
