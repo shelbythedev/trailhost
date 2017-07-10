@@ -186,12 +186,12 @@ Any end-user which contributes to TrailHost must have an User account.
     ```
 
   * Sample Response
-  ```javascript
-    {
-      "alias": "my_user_name",
-      "client_id": "595d02c93cd0130428d59d84",
-      "_id": "5963b58048a2890629fd645e",
-      "created_at": "2017-07-10T15:33:49.004Z",
-      "submission_count": 0
-    }
-  ```
+    ```javascript
+      {
+        "alias": "my_user_name",
+        "client_id": "595d02c93cd0130428d59d84",
+        "_id": "5963b58048a2890629fd645e",
+        "created_at": "2017-07-10T15:33:49.004Z",
+        "submission_count": 0
+      }
+    ```
