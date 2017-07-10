@@ -165,7 +165,7 @@ Any end-user which contributes to TrailHost must have an User account.
 
   Creates new `User` object.
 
-  **Only accepts `User.alias`, which should be the user's screen name.**
+  **NOTE: Only accepts** `User["alias"]`**, which should be the user's screen name.**
 
   * URL
 
