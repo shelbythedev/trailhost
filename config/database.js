@@ -1,5 +1,5 @@
 let mongoose = require('mongoose')
-let dbConnection = process.env.MONGOLAB_URI || 'mongodb://localhost/trailhost'
+let dbConnection = process.env.MONGODB_URI || 'mongodb://localhost/trailhost'
 
 mongoose.connect(dbConnection, (err) => {
   if (err){
