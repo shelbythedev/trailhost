@@ -7,6 +7,22 @@ let mongoose = require('mongoose'),
 // Models
 let Users = mongoose.model('User')
 
+let getAll = (clientId, callback) => {
+  let error = null
+
+  if (clientId){
+    Users.find({client_id: clientId}, (err, users) => {
+      if (err) error = err
+      callback(error, users)
+    })
+  }else{
+    Users.find({}, (err, users) => {
+      if (err) error = err
+      callback(error, users)
+    })
+  }
+}
+
 // create new user
 let create = (clientId, user, callback) => {
   let error = null
@@ -26,6 +42,7 @@ let create = (clientId, user, callback) => {
 }
 
 let User = {
+  getAll: getAll,
   create: create
 }
 

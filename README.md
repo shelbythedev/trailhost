@@ -161,6 +161,51 @@ Any end-user which contributes to TrailHost must have an User account.
           }
 ```
 
+### Get All Users
+
+  Returns all `User` objects. You may include query string params to filter by `User["client_id"]`.
+
+  * URL
+
+    `GET /user/`
+
+    or
+
+    `GET /user/?client_id=123` to return all users who belong to Client \_id: 123.
+
+  * Request Headers
+
+    ```
+      token : [String],
+    ```
+
+  * Request Body
+
+    *None*
+
+  * Sample Response
+    ```javascript
+      [
+        {
+            "_id": "595fc4de959922044faa27e8",
+            "alias": "jsmith1",
+            "client_id": "595d02c93cd0130428d59d84",
+            "__v": 0,
+            "created_at": "2017-07-07T17:28:44.849Z",
+            "submission_count": 0
+        },
+        {
+            "_id": "5963b58048a2890629fd645e",
+            "alias": "ssolomon",
+            "client_id": "595d02c93cd0130428d59d85",
+            "__v": 0,
+            "created_at": "2017-07-10T15:33:49.004Z",
+            "submission_count": 0
+        }
+      ]
+    ```
+
+
 ### Create User
 
   Creates new `User` object.

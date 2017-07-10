@@ -15,6 +15,15 @@ router.use((req, res, next) => {
   })
 })
 
+// GET ALL USERS
+// if includes query param 'client_id', returns all users per given Client ID
+router.get('/', (req, res, next) => {
+  User.getAll(req.query.client_id, (err, users) => {
+    if (err) return next(new Error(err))
+    res.status(200).json(users)
+  })
+})
+
 // CREATE USER
 router.post('/', (req, res, next) => {
   User.create(req.session.client._id, req.body, (err, user) => {
