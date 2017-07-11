@@ -267,7 +267,7 @@ Any end-user which contributes to TrailHost must have an User account.
     ```javascript
       {
         "_id": "595fc4de959922044faa27e8",
-        "alias": "john doe",
+        "alias": "john.doe",
         "client_id": "595d02c93cd0130428d59d84",
         "__v": 0,
         "created_at": "2017-07-07T17:28:44.849Z",
