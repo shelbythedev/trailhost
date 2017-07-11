@@ -32,4 +32,12 @@ router.post('/', (req, res, next) => {
   })
 })
 
+// GET USER BY ID
+router.get('/:id', (req, res, next) => {
+  User.find(req.params.id, (err, user) => {
+    if (err) return next(new Error(err))
+    res.status(200).json(user)
+  })
+})
+
 module.exports = router

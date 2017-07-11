@@ -26,6 +26,8 @@ TrailHost is a community-supported store of off-road trail data.
 
     * [Create User](#create-user)
 
+    * [Get User](#get-user)
+
 ## Technical Information
 ### API URLs
 
@@ -239,6 +241,36 @@ Any end-user which contributes to TrailHost must have an User account.
         "client_id": "595d02c93cd0130428d59d84",
         "_id": "5963b58048a2890629fd645e",
         "created_at": "2017-07-10T15:33:49.004Z",
+        "submission_count": 0
+      }
+    ```
+
+### Get User
+
+  Find `User` object by `User["_id"]`.
+
+  * URL
+
+    `GET /user/:id`
+
+  * Request Headers
+
+    ```
+      token : [String],
+    ```
+
+  * Request Body
+
+    *None*
+
+  * Sample Response
+    ```javascript
+      {
+        "_id": "595fc4de959922044faa27e8",
+        "alias": "john doe",
+        "client_id": "595d02c93cd0130428d59d84",
+        "__v": 0,
+        "created_at": "2017-07-07T17:28:44.849Z",
         "submission_count": 0
       }
     ```

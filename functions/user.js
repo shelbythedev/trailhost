@@ -41,9 +41,20 @@ let create = (clientId, user, callback) => {
   callback(error, userData)
 }
 
+// find user by ID
+let find = (userId, callback) => {
+  let error = null
+
+  Users.findOne({_id: userId}, (err, user) => {
+    if (err) error = err
+    callback(error, user)
+  })
+}
+
 let User = {
   getAll: getAll,
-  create: create
+  create: create,
+  find: find
 }
 
 module.exports = User
