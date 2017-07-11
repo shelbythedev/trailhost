@@ -40,4 +40,13 @@ router.get('/:id', (req, res, next) => {
   })
 })
 
+// UPDATE USER
+// User can be updated from related Client ONLY
+router.put('/:id', (req, res, next) => {
+  User.update(req.params.id, req.session.client._id, req.body, (err, user) => {
+    if (err) return next(new Error(err))
+    res.status(200).json(user)
+  })
+})
+
 module.exports = router

@@ -28,6 +28,8 @@ TrailHost is a community-supported store of off-road trail data.
 
     * [Get User](#get-user)
 
+    * [Update User](#update-user)
+
 ## Technical Information
 ### API URLs
 
@@ -271,6 +273,41 @@ Any end-user which contributes to TrailHost must have an User account.
         "client_id": "595d02c93cd0130428d59d84",
         "__v": 0,
         "created_at": "2017-07-07T17:28:44.849Z",
+        "submission_count": 0
+      }
+    ```
+
+### Update User
+
+  Updates `User` object and returns updated.
+
+  **NOTE: Only accepts** `User["alias"]`**, which should be the user's screen name.**
+
+  * URL
+
+    `PUT /user/:id`
+
+  * Request Headers
+
+    ```
+      token : [String],
+    ```
+
+  * Request Body
+
+    ```javascript
+      {
+        "alias": "my_user_name"
+      }
+    ```
+
+  * Sample Response
+    ```javascript
+      {
+        "alias": "updated_username",
+        "client_id": "595d02c93cd0130428d59d84",
+        "_id": "5963b58048a2890629fd645e",
+        "created_at": "2017-07-10T15:33:49.004Z",
         "submission_count": 0
       }
     ```

@@ -7,6 +7,8 @@ let mongoose = require('mongoose'),
 // Models
 let Users = mongoose.model('User')
 
+// get all users
+// accepts 'client_id' to return users per client
 let getAll = (clientId, callback) => {
   let error = null
 
@@ -51,10 +53,21 @@ let find = (userId, callback) => {
   })
 }
 
+// update user
+let update = (userId, clientId, userData, callback) => {
+  let error = null
+
+  Users.findOneAndUpdate({_id: userId, client_id: clientId}, userData, {new: true}, (err, user) => {
+    if (err) error = err
+    callback(error, user)
+  })
+}
+
 let User = {
   getAll: getAll,
   create: create,
-  find: find
+  find: find,
+  update: update
 }
 
 module.exports = User
